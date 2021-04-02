@@ -224,7 +224,7 @@ class Decoder:
         """
         self.buffer = RingBuffer(bufferLength)
     
-    def decode(self, message: list) -> list[tuple[int, list]]:
+    def decode(self, message: list) -> list[tuple[int, list[int]]]:
         """
         Decode BLE Midi message(s) to Midi message(s)
 
